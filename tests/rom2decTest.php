@@ -18,10 +18,16 @@ class Rom2DecTest extends TestCase
             ['ix', 9],
             ['x', 10],
             ['xi', 11],
-            ['xlii', 42],
+            ['xxxix', 39],
             ['xl', 40],
+            ['xlii', 42],
+            ['xlix', 49],
             ['l', 50],
+            ['li', 51],
+            ['lix', 59],
             ['lx', 60],
+            ['lxi', 61],
+            ['lxxxix', 89],
             ['xc', 90],
             ['c', 100],
             ['cx', 110],
@@ -60,12 +66,12 @@ class Rom2DecTest extends TestCase
     public function invalidSequencesProvider()
     {
         return [
-            ['iiii'], ['iiv'], ['iix'], ['il'], ['ic'], ['im'],
+            ['iiii'], ['iiv'], ['iix'], ['iil'], ['iic'], ['iim'], ['il'], ['ic'], ['im'],
             ['vv'], ['vx'], ['vl'], ['vc'], ['vd'], ['vm'],
-            ['xxxx'], ['xxl'], ['xxc'], ['xd'], ['xm'],
+            ['xxxx'], ['xxl'], ['xxc'], ['xxd'], ['xxm'], ['xd'], ['xm'],
             ['ll'], ['lc'], ['ld'], ['lm'],
             ['cccc'], ['ccd'], ['ccm'],
-            ['dddd'], ['ddm'],
+            ['dd'], ['dm'],
         ];
     }
 
